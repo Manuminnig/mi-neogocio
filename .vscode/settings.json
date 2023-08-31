@@ -6,7 +6,7 @@
             "port": 5432,
             "driver": "PostgreSQL",
             "name": "mi-negocio",
-            "database": "mi-negocio",
+            "database": "postgres",
             "username": "postgres",
             "password": "secret123!"
         }
