@@ -20,12 +20,12 @@ export class OfertasService {
   }
 
   findOne(id: number) {
-    return this.ofertaRepository.findOne(id);
+    return this.ofertaRepository.findOne({where: { id }} );
   }
 
   update(id: number, updateOfertaDto: UpdateOfertaDto) {
     this.ofertaRepository.update(id, updateOfertaDto);
-    return this.ofertaRepository.findOne(id);
+    return this.ofertaRepository.findOne({where: { id }});
   }
 
   async remove(id: number): Promise<void> {

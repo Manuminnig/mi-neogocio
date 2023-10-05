@@ -7,6 +7,9 @@ import { ProductosModule } from './productos/productos.module';
 import { OfertasModule } from './ofertas/ofertas.module';
 import { Oferta } from './ofertas/entities/oferta.entity';
 
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 @Module({
   imports: [
     TypeOrmModule.forRoot({

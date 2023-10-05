@@ -30,16 +30,21 @@ export class ProductosService {
   }
 
   findOne(id: number): Promise<Producto>{
-    return this.productoRepository.findOne(id,{relations:['oferta']});
+    return this.productoRepository.findOne({ where: { id }, relations:['oferta']});
   
   }
 
   update(id: number, updateProductoDto: UpdateProductoDto) {
     this.productoRepository.update(id, updateProductoDto);
-    return this.productoRepository.findOne(id,{relations:['oferta']});
+    return this.productoRepository.findOne({ where: { id }, relations:['oferta']});
   }
 
   async remove(id: number): Promise<void> {
     await this.productoRepository.delete(id);
+  }
+
+  async getAllProductos(): Promise<Producto[]> {
+    const productos = await this.productoRepository.find();
+    return productos;
   }
 }

@@ -22,7 +22,11 @@ export class ProductosController {
   findOne(@Param('id') id: string) {
     return this.productosService.findOne(+id);
   }
-
+  
+  @Get('all')
+  getAllProductos() {
+    return this.productosService.getAllProductos();
+  }
   @Put(':id')
   update(@Param('id') id: string, @Body() updateProductoDto: UpdateProductoDto): Promise <Producto> {
     return this.productosService.update(+id, updateProductoDto);
