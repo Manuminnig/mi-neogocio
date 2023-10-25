@@ -16,7 +16,7 @@ services:
     ports: 
       - '3000:3000'
     volumes:
-      - '.:/usr/src/app'
+      - './src:/usr/src/app/src'
     environment:
       - DATABASE_NAME=postgres
       - DATABASE_HOST=postgres

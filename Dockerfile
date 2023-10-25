@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:16-alpine
 
 ENV DATABASE_NAME postgres
 ENV DATABASE_HOST localhost
