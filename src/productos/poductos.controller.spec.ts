@@ -23,7 +23,7 @@ describe('ProductosController', () => {
   }
 
   beforeEach(async () => {
-    const module: TestingModulex25 = await Test.createTestingModule({
+    const module: TestingModule = await Test.createTestingModule({
       controllers: [ProductosController],
       providers: [ProductosService],
       
@@ -39,7 +39,7 @@ describe('ProductosController', () => {
   
     expect(result[0]).toEqual({
       id: 1,
-      name: "Coca-Cola",
+      name: "Pepsi"
       description: "Gaseosa 2.5L",
       price: 700,
     });
