@@ -39,7 +39,7 @@ describe('ProductosController', () => {
   
     expect(result[0]).toEqual({
       id: 1,
-      name: "Pepsi"
+      name: "Coca-Cola",
       description: "Gaseosa 2.5L",
       price: 700,
     });
