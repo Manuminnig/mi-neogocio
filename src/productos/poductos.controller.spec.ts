@@ -23,7 +23,7 @@ describe('ProductosController', () => {
   }
 
   beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
+    const module: TestingModulex25 = await Test.createTestingModule({
       controllers: [ProductosController],
       providers: [ProductosService],
       
