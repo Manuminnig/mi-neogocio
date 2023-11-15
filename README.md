@@ -1,3 +1,7 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8ca62e9bbab54354bf1dd59b35ad464a)](https://app.codacy.com/gh/Manuminnig/mi-negocio/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
+[![codecov](https://codecov.io/gh/Manuminnig/mi-negocio/graph/badge.svg?token=Y93TYS7DTG)](https://codecov.io/gh/Manuminnig/mi-negocio)
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
