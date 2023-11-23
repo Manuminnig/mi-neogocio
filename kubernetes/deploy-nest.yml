@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nest-deployment
+  labels:
+    app: nest
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nest
+  template:
+    metadata:
+      labels:
+        app: nest
+    spec:
+      containers:
+      - name: api
+        image: manuminnig/nest
+        env:
+        - name: DATABASE_HOST
+          value: kesavan.db.elephantsql.com
+        - name: DATABASE_PASSWORD
+          value: Is4TfO-Bm6zO4ERDCGUAORFeTz7VSatD
+        - name: DATABASE_USERNAME
+          value: qnszibwb
+        - name: DATABASE_NAME
+          value: qnszibwb
+        - name: DATABASE_PORT
+          value: "5432"
+        ports:
+        - containerPort: 3000
